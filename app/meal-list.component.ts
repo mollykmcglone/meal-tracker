@@ -9,10 +9,16 @@ import { EditMealComponent} from './edit-meal.component';
   outputs: ['onMealSelect'],
   directives: [MealComponent, EditMealComponent],
   template:`
-  <meal-display *ngFor="#currentMeal of mealList" (click)="mealClicked(currentMeal)" [class.selected]="currentMeal === selectedMeal" [meal]="currentMeal">
-  </meal-display>
-  <edit-meal *ngIf="selectedMeal" [meal]="selectedMeal">
-  </edit-meal>
+  <div class= "row">
+    <div class="col-sm-4 col-sm-offset-1">
+      <meal-display  *ngFor="#currentMeal of mealList" (click)="mealClicked(currentMeal)" [class.selected]="currentMeal === selectedMeal" [meal]="currentMeal">
+      </meal-display>
+    </div>
+    <div class="col-sm-4 col-sm-offset-1">
+      <edit-meal *ngIf="selectedMeal" [meal]="selectedMeal">
+      </edit-meal>
+    </div>
+  </div>
   `
 })
 

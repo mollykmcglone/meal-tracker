@@ -8,7 +8,7 @@ import { Meal } from './meal.model';
   template: `
   <div class="container">
     <h1>Meal Tracker</h1>
-    <meal-list
+    <meal-list 
       [mealList]="meals"
       (onMealSelect)="mealWasSelected($event)">
     </meal-list>
