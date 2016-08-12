@@ -6,6 +6,9 @@ import {Meal} from './meal.model';
   inputs: ['meal'],
   template:`
     <div class="meal-form">
+      <h3 class="selected">{{ meal.name }}</h3>
+      <p><span class="bold">From:</span> {{ meal.source }} <span class="bold">Rating:</span> {{ meal.rating }} <span class="bold">Calories:</span> {{ meal.calories }}</p>
+      <p><span class="bold">Details:</span> {{ meal.details }}</p>
       <form>
       <h3 class="selected">Edit {{ meal.name }}: </h3>
         <div class="form-group row">

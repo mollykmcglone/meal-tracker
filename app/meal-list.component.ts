@@ -13,7 +13,7 @@ import { CaloriesPipe } from './calories.pipe';
   pipes: [CaloriesPipe],
   template:`
   <div class= "row">
-    <div class="col-sm-4">
+    <div class="col-sm-6">
       <select (change)="onChange($event.target.value)" class="filter">
         <option value="all" selected="selected">Show all meals</option>
         <option value="low-calorie">Show meals with less than 500 calories</option>
@@ -22,7 +22,7 @@ import { CaloriesPipe } from './calories.pipe';
       <meal-display  *ngFor="#currentMeal of mealList | calories:filterCalories" (click)="mealClicked(currentMeal)" [class.selected]="currentMeal === selectedMeal" [meal]="currentMeal">
       </meal-display>
     </div>
-    <div class="col-sm-6 col-sm-offset-1">
+    <div class="col-sm-6">
       <edit-meal *ngIf="selectedMeal" [meal]="selectedMeal">
       </edit-meal>
     </div>
