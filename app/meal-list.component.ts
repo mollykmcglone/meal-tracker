@@ -48,7 +48,7 @@ export class MealListComponent {
     this.onMealSelect.emit(clickedMeal);
   }
   createMeal(params: string[]): void {
-    this.mealList.push(new Meal(params[0], params[1], params[2], parseFloat(params[3]), parseFloat(params[4]), this.mealList.length));
+    this.mealList.push(new Meal(params[0], params[1], params[2], parseFloat(params[3]), parseFloat(params[4]), params[5], this.mealList.length));
   }
   onChange(filterOption) {
     this.filterCalories = filterOption;

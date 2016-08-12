@@ -5,3 +5,7 @@
 .bold {
   font-weight: bold;
 }
+
+p {
+  font-size: 1.25em;
+}

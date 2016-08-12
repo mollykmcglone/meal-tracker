@@ -40,7 +40,12 @@ import {Meal} from './meal.model';
           <input class="form-control" placeholder="Calories" id="calories" #newCalories>
         </div>
       </div>
-      <button (click)="addMeal(newName, newSource, newDetails, newRating, newCalories)" class="btn btn-success btn-lg">Submit</button>
+      <div class="form-group row">
+        <div class="col-xs-4">
+          <input type="date" class="form-control" id="date" #newDate>
+        </div>
+      </div>
+      <button (click)="addMeal(newName, newSource, newDetails, newRating, newCalories, newDate, newTime)" class="btn btn-success btn-lg">Submit</button>
     </form>
   </div>
   `
@@ -51,13 +56,14 @@ export class NewMealComponent {
   constructor(){
     this.onSubmitNewMeal = new EventEmitter();
   }
-  addMeal(userName: HTMLInputElement, userSource: HTMLInputElement, userDetails: HTMLInputElement, userRating: HTMLSelectElement, userCalories: HTMLInputElement){
-    var params: String[] = [userName.value, userSource.value, userDetails.value, userRating.value];
+  addMeal(userName: HTMLInputElement, userSource: HTMLInputElement, userDetails: HTMLInputElement, userRating: HTMLSelectElement, userCalories: HTMLInputElement, userDate: HTMLInputElement, userTime: HTMLInputElement){
+    var params: String[] = [userName.value, userSource.value, userDetails.value, userRating.value, userCalories.value, userDate.value];
     this.onSubmitNewMeal.emit(params);
     userName.value = "";
     userSource.value ="";
     userDetails.value ="";
     userRating.value ="";
     userCalories.value="";
+    userDate.value="";
   }
 }
