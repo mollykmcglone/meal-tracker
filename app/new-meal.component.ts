@@ -7,7 +7,7 @@ import {Meal} from './meal.model';
   template:`
   <div class="meal-form">
     <form>
-    <h3 class="selected">Add a Meal: </h3>
+    <h3 class="selected center">Add a New Meal: </h3>
       <div class="form-group row">
         <div class="col-xs-10">
           <input class="form-control" placeholder="Name" id="name" #newName>
@@ -24,7 +24,7 @@ import {Meal} from './meal.model';
         </div>
       </div>
       <div class="form-group row">
-        <div class="col-xs-4">
+        <div class="col-xs-2">
           <select class="form-control" placeholder="Rating" id="rating" #newRating>
             <option disabled></option>
             <option>1</option>
@@ -41,7 +41,7 @@ import {Meal} from './meal.model';
         </div>
       </div>
       <div class="form-group row">
-        <div class="col-xs-4">
+        <div class="col-xs-6">
           <input type="date" class="form-control" id="date" #newDate>
         </div>
       </div>

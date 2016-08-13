@@ -6,6 +6,27 @@
   font-weight: bold;
 }
 
-p {
+.form-group {
   font-size: 1.25em;
+}
+
+.input {
+  font-size: 1.25em;
+}
+
+select {
+  font-size: 2em;
+}
+
+.center {
+  text-align: center;
+}
+
+.jumbotron {
+  background-color: inherit;
+  margin-bottom: 0;
+}
+
+.jumbotron h1 {
+  font-size: 7em;
 }

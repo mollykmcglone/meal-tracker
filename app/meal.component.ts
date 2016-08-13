@@ -1,4 +1,4 @@
-import { Component } from 'angular2/core';
+import { Component, EventEmitter } from 'angular2/core';
 import { Meal } from './meal.model';
 
 @Component({
@@ -6,7 +6,9 @@ import { Meal } from './meal.model';
   inputs: ['meal'],
   template:`
   <div>
-    <h3>{{ meal.name }}</h3>
+    <h3>{{ meal.name }} ({{ meal.rating }} stars, {{ meal.calories }} calories)</h3>
+    <p><span class="bold">From:</span> {{ meal.source }} <span class="bold">Date:</span> {{ meal.date }}</p>
+    <p><span class="bold">Details:</span> {{ meal.details }}</p>
   </div>
   `
 })
