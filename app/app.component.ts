@@ -30,7 +30,8 @@ export class AppComponent {
       new Meal("Pizza", "Life of Pi", "such a good happy hour!", 5, 600, "2016-08-02", 1),
       new Meal("Quesadilla", "Home", "with veggies and lots of guacamole", 4, 700, "2016-08-02", 2),
       new Meal("Rice bowl", "Cafe Yumm", "with bbq tofu, pricey but good", 5, 800, "2016-08-01", 3),
-      new Meal("Tacos", "Mi Mero Mole", "Finally tried all-you-can-eat Taco Tuesday!", 5, 1200, "2016-08-01", 4)
+      new Meal("Tacos", "Mi Mero Mole", "Finally tried all-you-can-eat Taco Tuesday!", 5, 1200, "2016-08-01", 4),
+      new Meal("Tofu Sandwich", "Boke Dokie", "very good but too many fries", 4, 400, "2016-08-02", 5)
     ];
   }
   mealWasSelected(clickedMeal: Meal): void {
