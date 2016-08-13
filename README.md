@@ -20,7 +20,6 @@ User Stories:
 
 To replicate, clone this repository to your local hard drive using this link: https://github.com/mollykmcglone/meal-tracker.git
 
-###Run from the command line:
 ```
 1. Install globals if needed (gulp, bower, sass, typescript, typescript packages)
 
@@ -46,13 +45,13 @@ Please contact me with any questions, concerns, or ideas at mollykmcglone@gmail.
 
 ## Technologies Used
 
-* Javascript
-* AJAX
+* Angular2
 * npm
 * Bower
 * node.js
 * HTML
 * CSS
+* SASS
 * Bootstrap
 
 ### License
